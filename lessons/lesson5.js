@@ -93,3 +93,67 @@ addFive();
 addFive();
 console.log(addFive());
 
+/* default parameter */
+/* Adding a default parameter to a function will
+allow you do call that function and supply a value
+for that parameter, or not */
+function subtractThis(value4, value5 = 10) {
+    return value4 - value5;
+} // end function
+
+/* Function called using both our variables. The
+default value in the parameter is ignored. */
+console.log(subtractThis(15,7));
+
+/* Function called only supplying the first
+value, which is used for the parameter. The 
+default parameter will be used since it was not 
+supplied when the function is called. */
+console.log(subtractThis(34));
+
+/* rest parameter */
+/* Allows for an indefinite number of arguments as an array */
+function groupSample(...args) {
+    console.log(args);
+}
+
+/* Calling this function with a comma separated 
+set of information. This information is the arguments */
+groupSample('Welcome', 'to', 'Javascript', 10, 15, 20);
+
+/* Arrow Functions */
+/* A compact version of a function expression. */
+
+/* Traditional Anonymous Function (Function Expression) */
+const we = function(value) {
+    return value + 100;
+}
+
+console.log(we(15));
+
+/* Arrow function of the above function */
+const me = value50 => value50 + 100;
+
+console.log(me(15));
+
+/* Traditional way - 2 parameters */
+const example2 = function(num1, num2) {
+    return num1 = num2;
+} // end function 
+
+/* Arrow function version of above */
+const example2b = (num3, num4) => num3 + num4;
+
+console.log(example2(23, 64));
+console.log(example2b(23,64));
+
+/* Traditional way - No parameters */
+const example3 = function() {
+    return 10 +5;
+} // end function
+
+/* Arrow function version of above*/
+const example3b = () => 10 + 5; 
+
+console.log(example3());
+console.log(example3b());
