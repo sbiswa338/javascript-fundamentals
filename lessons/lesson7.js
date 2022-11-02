@@ -17,7 +17,7 @@ function ifExample(value1) {
 ifExample(2);
 
 /* if / else statement */
-/* Teh else statement will execute only 
+/* The else statement will execute only 
 when the if condition is false, except in cases
 where the ! logicical operator is used. */
 function elseExample(value2) {
@@ -32,7 +32,7 @@ function elseExample(value2) {
 elseExample('JavaScript1');
 
 /* else if */
-/* A chain o fif else statements. Be aware of 
+/* A chain of if else statements. Be aware of 
 the order of the conditions. This is so 
 conditions are not skipped. */
 function elseIfExample(num1) { 
