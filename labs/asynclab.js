@@ -17,10 +17,6 @@ async function myAsync(echo) {
 }
 
 // Task 3
-function repeatFunc(){
     for(let index = 0; index < 5; index++) {
       myAsync(index);
     }
-}
-
-repeatFunc();
